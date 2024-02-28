@@ -1,0 +1,156 @@
+.guid-container {
+    
+    margin: 0 auto;
+    padding-bottom: 80px;
+    padding-top: 40px;
+    width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+
+     @media screen and (min-width: 768px) {
+        padding-top: 0;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    @media screen and (min-width: 1440px) {
+        width: 940px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    @media screen and (min-width: 1920px) {
+        width: 1400px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+}
+
+.guid-container h1 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 20px;
+
+    @media screen and (min-width: 768px) {
+       font-size: 30px;
+       font-weight: 700;
+       margin-bottom: 20px;
+    }
+
+    @media screen and (min-width: 1440px) {
+        font-size: 32px;
+        font-weight: 700;
+        margin-bottom: 40px;
+    }
+
+    @media screen and (min-width: 1920px) {
+        font-size: 40px;
+        font-weight: 700;
+        margin-bottom: 40px;
+    }
+}
+
+.guid-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    
+    @media screen and (min-width: 768px) {
+       gap: 18px
+    }
+
+    @media screen and (min-width: 1440px) {
+        gap: 20px;
+    }
+
+    @media screen and (min-width: 1920px) {
+        gap: 40px;
+    }
+}
+
+.guid-card {
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 5px -1px, rgba(0, 0, 0, 0.14) 0px 6px 10px 0px, rgba(0, 0, 0, 0.12) 0px 1px 18px 0px;
+  border-radius: 20px;
+  overflow: hidden;
+  width: auto;
+  margin-bottom: 16px;
+
+    @media screen and (min-width: 768px) {
+       width: 350px;
+        min-height: 330px;
+        margin-bottom: 0;
+    }
+
+   @media screen and (min-width: 1440px) {
+        width: 440px;
+        min-height: 372px;
+    }
+
+    @media screen and (min-width: 1920px) {
+        width: 640px;
+        min-height: auto;
+    }
+}
+
+.descr-wrapper {
+    padding: 20px;
+    text-align: left;
+}
+
+.img-wrapper {
+    overflow: hidden;
+    object-fit: cover;
+
+     @media screen and (min-width: 1440px) {
+        width: 440px;
+        height: 220px;
+    }
+
+    @media screen and (min-width: 1920px) {
+        width: 640px;
+        height: 320px;
+    }
+}
+
+.guid-img {
+    width: 100%;
+
+    @media screen and (min-width: 1440px) {
+        width: 440px;
+        height: 220px;
+        object-fit: contain;
+    }
+
+    @media screen and (min-width: 1920px) {
+        width: 640px;
+        height: 320px;
+    }
+    
+}
+
+.guid-paragraph {
+    
+    font-weight: 800;
+    @media screen and (min-width: 1440px) {
+        font-size: 16px;
+    }
+
+    @media screen and (min-width: 1920px) {
+        font-size: 18px;
+    }
+
+}
+
+.guid-info {
+    display: block;
+    font-weight: 400;
+      @media screen and (min-width: 1440px) {
+        font-size: 14px;
+    }
+
+    @media screen and (min-width: 1920px) {
+        font-size: 16px;
+    }
+}

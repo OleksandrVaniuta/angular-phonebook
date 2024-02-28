@@ -1,0 +1,36 @@
+.add-contact-form-wrapper {
+    padding: 20px;
+    padding-top: 20px;
+    width: 100%;
+
+    @media screen and (min-width: 768px) {
+        padding-left: 24px;
+        padding-right: 24px;
+        width: 350px;
+    }
+
+    @media screen and (min-width: 1440px) {
+        padding-left: 24px;
+        padding-right: 24px;
+        width: 400px;
+    }
+
+    @media screen and (min-width: 1920px) {
+        padding-left: 30px;
+        padding-right: 30px;
+        width: 500px;
+    }
+}
+
+.add-contact-title {
+    font-size: 16px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.batton-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    gap: 10px;
+}

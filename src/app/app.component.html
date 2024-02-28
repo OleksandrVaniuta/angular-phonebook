@@ -1,0 +1,22 @@
+<div class="main-container">
+  <header>
+    <nav class="head_nav">
+      <div>
+<a mat-mini-fab color="accent" routerLink="/home" title="home" class="homeLink"><mat-icon
+      class="mat-icon-sm customIconSize">home</mat-icon></a>
+    <a routerLink="/contacts" *ngIf="isAuth.isAuthenticated" class="contact-link" routerLinkActive="active-link">Contacts</a>
+      </div>
+  <div class="auth-bnt-wrapper">
+    <a routerLink="/login"  class="auth-link" *ngIf="!isAuth.isAuthenticated" routerLinkActive="active-link">Login</a>
+  <a routerLink="/register" class="auth-link" *ngIf="!isAuth.isAuthenticated" routerLinkActive="active-link">Register</a>
+  <p *ngIf="isAuth.isAuthenticated" class="user-email">{{userEmail}}</p>
+    <button type="button" class="logOut-btn" (click)="logOut()"  *ngIf="isAuth.isAuthenticated" title="log out" aria-label="log out button">
+      <mat-icon class="mat-icon-sm logOutIcon" >logout</mat-icon></button>
+  </div>
+    </nav>
+  </header>
+ 
+  
+  <router-outlet></router-outlet>
+
+</div>

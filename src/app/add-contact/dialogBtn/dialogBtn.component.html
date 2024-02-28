@@ -1,0 +1,9 @@
+
+<button mat-fab type="button" (click)="openDialog()" class="add-btn-dialog" title="add contact" aria-label="add contact button" *ngIf="operationType === 'Add'" >
+      <mat-icon class="mat-icon-sm customIconSize">add</mat-icon>
+</button>
+<button mat-menu-item type="button" (click)="openDialog()" class='edit-btn-dialog' title="edit contact" aria-label="edit contact button" *ngIf="operationType === 'Edit'">
+      <!-- {{operationType === 'Edit' ? 'Edit' : ''}} -->
+      Edit
+</button>
+<!-- [class.add-btn-dialog]="operationType === 'Add'" [class.edit-btn-dialog]="operationType === 'Edit'" -->

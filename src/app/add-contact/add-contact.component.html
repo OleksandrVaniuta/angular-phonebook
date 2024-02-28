@@ -1,0 +1,35 @@
+<div class="add-contact-form-wrapper">
+    <h3 class="add-contact-title">{{data.operationType === 'Add' ? 'Add new contact' : 'Edit contact'}}</h3>
+<div [formGroup]="addContactForm" >
+    <form [formGroup]="addContactForm" novalidate>
+        <div class="input-wrappet">
+         <mat-form-field class="example-full-width" appearance="outline"  [color]="addContactForm.invalid ? 'primary' : 'warn'" style="width: 100%;">
+            <mat-label>Name</mat-label>
+            <input type="text" matInput formControlName="name"  [(ngModel)]="data.name" />
+         </mat-form-field>
+         <span class="form-error-msg">
+            <span
+                *ngIf="addContactForm.get('name')?.invalid && (addContactForm.get('name')?.touched || addContactForm.get('name')?.dirty)" >
+                <span *ngIf="addContactForm.get('name')?.hasError('required')">field is required</span>
+            </span>
+         </span>
+        </div>
+        <div class="input-wrappet">
+            <mat-form-field class="example-full-width" appearance="outline"  [color]="addContactForm.invalid ? 'primary' : 'warn'" style="width: 100%;">
+              <mat-label>Number</mat-label>
+              <input type="name" matInput formControlName="number"  [(ngModel)]="data.number" />
+           </mat-form-field>
+              <span class="form-error-msg">
+                <span  *ngIf="addContactForm.get('number')?.invalid && (addContactForm.get('number'))?.touched || addContactForm.get('number')?.dirty">
+                   <span *ngIf="addContactForm.get('number')?.hasError('required')">field is required</span>
+                   <span *ngIf="addContactForm.get('number')?.hasError('minlength')">Password must be at least 1 characters</span>
+                </span>
+              </span> 
+        </div>
+    </form>
+    <div class="batton-wrapper">
+      <button mat-raised-button mat-button (click)="onNoClick()">Cancel</button>
+      <button mat-raised-button color="primary" type="button" mat-button [mat-dialog-close]="{name: data.name, number: data.number}" [disabled]="addContactForm.invalid">{{data.operationType === 'Add' ? 'Add' : 'Edit'}}</button>
+    </div> 
+</div>
+</div>
