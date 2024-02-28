@@ -66,14 +66,31 @@
  }
 
  .no-contacts-msg {
-    width: max-content;
+    
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 40px;
-    padding: 100px;
+    
     border: 1px dashed ;
+
+    @media screen and (min-width: 768px) {
+      width: max-content;
+          font-size: 32px;
+         padding: 20px;
+    }
+     
+   @media screen and (min-width: 1440px) {
+      width: max-content;
+          font-size: 40px;
+         padding: 100px;
+    }
+
+    @media screen and (min-width: 1440px) {
+          font-size: 40px;
+         padding: 100px;
+    }
+
  }
 
  .loader {
